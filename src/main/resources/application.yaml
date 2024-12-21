@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: laboratory-work
+  datasource:
+    url: jdbc:postgresql://127.0.0.1:5433/hse
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 007787898
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database: postgresql
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    clean-disabled: false
+
+
+server:
+  port: 8094
