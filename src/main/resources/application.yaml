@@ -2,10 +2,10 @@ spring:
   application:
     name: laboratory-work
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5433/hse
+    url: jdbc:postgresql://127.0.0.1:5432/hse
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: 007787898
+    password: PerfectDB
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     database: postgresql

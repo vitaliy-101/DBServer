@@ -39,7 +39,7 @@ public class YearController {
         return ResponseEntity.ok("Good");
     }
 
-    @DeleteMapping("/delete/filter")
+    @PutMapping("/delete/filter")
     public ResponseEntity<String> deleteByFilter(@RequestBody FilterDto filterDto) {
         yearService.deleteByFilter(filterDto);
         return ResponseEntity.ok("Good");
