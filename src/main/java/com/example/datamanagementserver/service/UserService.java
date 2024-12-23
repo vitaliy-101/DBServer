@@ -31,7 +31,6 @@ public class UserService {
         user.setPassword(userRequest.getPassword());
         user.setSurname(userRequest.getSurname());
         user.setPatronymic(userRequest.getPatronymic());
-        groupRepository.increaseUserCount(user.getGroup().getId());
         return userRepository.save(user);
     }
 
@@ -63,9 +62,7 @@ public class UserService {
 
     public void deleteById(Long id) {
         existById(id);
-        Long groupId = userRepository.getReferenceById(id).getGroup().getId();
         userRepository.deleteById(id);
-        groupRepository.decreaseUserCount(groupId);
     }
 
     public void deleteByFilter(FilterDto filterDto) {

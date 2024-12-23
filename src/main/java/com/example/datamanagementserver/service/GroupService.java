@@ -59,7 +59,7 @@ public class GroupService {
 
     public void deleteByFilter(FilterDto filterDto) {
         if (filterDto.getField().equals("number")) {
-            groupRepository.deleteByNumber(filterDto.getIntFilter());
+            groupRepository.deleteGroupByNumber(filterDto.getIntFilter());
         }
         else {
             throw new NotFoundByFilterFieldException();
