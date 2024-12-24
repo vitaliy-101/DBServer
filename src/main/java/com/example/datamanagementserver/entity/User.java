@@ -32,6 +32,9 @@ public class User {
     @Column(name = "password")
     private String password;
 
+//    @Column(name = "isAdmin")
+//    private boolean isAdmin;
+
     @ManyToOne
     @JoinColumn(name = "university_group_id")
     private Group group;

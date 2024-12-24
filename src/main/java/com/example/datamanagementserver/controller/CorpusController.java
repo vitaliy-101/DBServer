@@ -39,7 +39,7 @@ public class CorpusController {
         return ResponseEntity.ok("Good");
     }
 
-    @DeleteMapping("/delete/filter")
+    @PutMapping("/delete/filter")
     public ResponseEntity<String> deleteByFilter(@RequestBody FilterDto filterDto) {
         corpusService.deleteByFilter(filterDto);
         return ResponseEntity.ok("Good");

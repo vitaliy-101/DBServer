@@ -17,4 +17,5 @@ public class UserRequest {
     private String patronymic;
     private String password;
     private Long groupId;
+//    private boolean isAdmin;
 }

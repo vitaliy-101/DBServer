@@ -69,7 +69,7 @@ public class EventService {
         event.setUser(userService.findById(eventRequest.getUserId()));
         event.setAuditory(auditoryService.findById(eventRequest.getAuditoryId()));
         checkBookTime(event);
-        checkUserCount(event);
+//        checkUserCount(event);
     }
 
     public void deleteById(Long id) {

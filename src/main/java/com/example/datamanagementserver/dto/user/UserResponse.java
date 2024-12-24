@@ -16,4 +16,5 @@ public class UserResponse {
     private String surname;
     private String patronymic;
     private Long groupId;
+//    private boolean isAdmin;
 }
